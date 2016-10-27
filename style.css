@@ -1,0 +1,112 @@
+body {
+	margin: 0;
+	font-family: "Oxygen", sans-serif;
+}
+
+header {
+	background-color: #388AD6;
+	margin: 0;
+}
+
+.main_menu a {
+	display: inline-block;
+	color: #EEE;
+	text-decoration: none;
+	padding: 30px;
+}
+
+.main_menu a:hover {
+	background-color: #63B5DA;
+	color: white;
+	padding-bottom: 28px;
+	border-bottom: 2px solid white;
+}
+
+.name {
+	padding: 0 50px;
+	color: white;
+	font-family: 'Oleo Script', cursive;
+	font-size: 200%;
+}
+
+.head {
+	text-align: center;
+	padding: 185px 0 265px 0;
+	background-image: url("img/head_back.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 130%;
+}
+
+.blocks_title {
+	text-align: center;
+	margin: 0;
+}
+
+.summary, .education, .skills {
+	padding: 10px 100px;
+}
+
+.summary {
+	background-color: #DAECFF;
+}
+
+table {
+	margin: auto;
+	border: 1px solid #ABD9F6;
+	padding: 0;
+}
+
+tr:nth-child(2n+1) {
+	background-color: #ABD9F6;
+}
+
+td:first-child {
+	width: 250px;
+}
+
+td:last-child {
+	width: 300px;
+}
+
+footer {
+	background-color: #388AD6;
+	padding: 20px;
+	text-align: center;
+}
+
+.footer_divs, .footer_divs div {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.links {
+	width: 32px;
+	height: 32px;
+	margin: 0 10px;
+}
+
+h3 {
+	margin: 0;
+	text-align: center;
+}
+
+.contacts {
+	font-size: 85%;
+}
+
+.contacts div {
+	margin: 0 10px;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.links_block {
+	padding-top: 20px;
+}
+
+.copyright {
+	padding-top: 25px;
+}
