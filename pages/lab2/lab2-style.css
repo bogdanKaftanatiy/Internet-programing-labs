@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: "Oxygen", sans-serif;
+}
+
+header {
+    background-color: #388AD6;
+    margin: 0;
+}
+
+.main_menu a {
+    display: inline-block;
+    color: #EEE;
+    text-decoration: none;
+    padding: 30px;
+}
+
+.main_menu a:hover {
+    background-color: #63B5DA;
+    color: white;
+    padding-bottom: 28px;
+    border-bottom: 2px solid white;
+}
+
+.name {
+    padding: 0 50px;
+    color: white;
+    font-family: 'Oleo Script', cursive;
+    font-size: 200%;
+}
+
+.content_block {
+    padding: 30px;
+}
+
+.search_form {
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+.search_form input[type="search"] {
+    width: 500px;
+    height: 35px;
+    font-size: 115%;
+}
+
+.search_form input[type="submit"] {
+    border-radius: 5px;
+    height: 35px;
+    width: 100px;
+}
+
+.resultTable {
+    margin: auto;
+    width: 1100px;
+    text-align: center;
+}
+
+.resultTable thead {
+    background-color: #63B5DA;
+}
+
+.resultTable tbody {
+
+}
+
+footer {
+    background-color: #388AD6;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer_divs, .footer_divs div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.links {
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
+}
+
+h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.contacts {
+    font-size: 85%;
+}
+
+.contacts div {
+    margin: 0 10px;
+}
+
+mark {
+    background-color: transparent;
+}
+
+.links_block {
+    padding-top: 20px;
+}
+
+.copyright {
+    padding-top: 25px;
+}

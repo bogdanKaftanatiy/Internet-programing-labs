@@ -32,7 +32,7 @@ header {
 .head {
 	text-align: center;
 	padding: 185px 0 265px 0;
-	background-image: url("img/head_back.jpg");
+	background-image: url("pages/img/head_back.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-size: 130%;
