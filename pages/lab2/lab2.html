@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<div class="wrapper">
 <header>
     <span class="name">Internet programing labs</span>
     <span class="main_menu"><a href="#">Lab1</a></span>
@@ -16,12 +17,12 @@
     <span class="main_menu"><a href="#">Lab4</a></span>
 </header>
 <div class="content_block">
-    <form onsubmit="" class="search_form">
+    <form name="search_form">
         <input type="search" name="search" placeholder="Input your request">
         <input type="submit" value="Search">
     </form>
 
-    <table class="resultTable">
+    <table class="resultTable" id="displayTable">
         <thead>
             <tr>
                 <th>ID</th>
@@ -32,16 +33,6 @@
                 <th>URl</th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Test</td>
-                <td>Some text and more other text. This is a test twitt with big size</td>
-                <td>5</td>
-                <td>31.01.2015</td>
-                <td>https://twitter.com/user/status/1</td>
-            </tr>
-        </tbody>
     </table>
 </div>
 <footer>
@@ -69,5 +60,7 @@
 			</div>
 		</span>
 </footer>
+</div>
+<script src="lab2script.js"></script>
 </body>
 </html>
