@@ -9,57 +9,73 @@
 </head>
 <body>
 <div class="wrapper">
-<header>
-    <span class="name">Internet programing labs</span>
-    <span class="main_menu"><a href="#">Lab1</a></span>
-    <span class="main_menu"><a href="#">Lab2</a></span>
-    <span class="main_menu"><a href="#">Lab3</a></span>
-    <span class="main_menu"><a href="#">Lab4</a></span>
-</header>
-<div class="content_block">
-    <form name="search_form">
-        <input type="search" name="search" placeholder="Input your request">
-        <input type="submit" value="Search">
-    </form>
+    <div class="paranga closedHelp">
+        <div class="helpData">
+            <h3>This is some help data.</h3>
+            You can use &AND& and |OR| operators. <br />
+            For search by id input 'id:'.<br />
+            For search by author input 'author:'.<br />
+            For search by text input 'text:'.<br />
+            For search by likes count input 'like:'.<br />
+            For search by date input 'date:'.<br />
+            For search by url adress input 'url:'.
+            <div class="closeHelp">X</div>
+        </div>
+    </div>
+    <header>
+        <span class="name">Internet programing labs</span>
+        <span class="main_menu"><a href="../../index.html">Lab1</a></span>
+        <span class="main_menu"><a href="./lab2.html">Lab2</a></span>
+        <span class="main_menu"><a href="#">Lab3</a></span>
+        <span class="main_menu"><a href="#">Lab4</a></span>
+    </header>
+    <div class="content_block">
+        <div class="help">
+            Help
+        </div>
+        <form name="search_form">
+            <input type="search" name="search" placeholder="Input your request">
+            <input type="submit" value="Search">
+        </form>
 
-    <table class="resultTable" id="displayTable">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Author</th>
-                <th>Text</th>
-                <th>LikesCount</th>
-                <th>Date</th>
-                <th>URl</th>
-            </tr>
-        </thead>
-    </table>
-</div>
-<footer>
-		<span class="footer_divs links_block">
-			<a href="https://github.com/bogdanKaftanatiy">
-				<img src="../img/github.png" alt="link to github" class="links">
-			</a>
-			<a href="https://vk.com/id88531632">
-				<img src="../img/vk.png" alt="link to vk" class="links">
-			</a>
-			<a href="mailto:bogdankaftanatiy@gmail.com">
-				<img src="../img/gmail.png" alt="link to gmail" class="links">
-			</a>
-		</span>
-    <span class="footer_divs copyright">© 2016. All Rights Reserved</span>
-    <span class="footer_divs contacts">
-			<h3>Contacts</h3>
-			<div>
-				<mark>Git:</mark> github.com/bogdanKaftanatiy <br />
-				<mark>E-mail:</mark> bogdankaftanatiy@gmail.com
-			</div>
-			<div>
-				<mark>Mob:</mark> +38 (063) 6916592 <br />
-				<mark>Skype:</mark> Bogdan Kaftanatiy
-			</div>
-		</span>
-</footer>
+        <table class="resultTable" id="displayTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Author</th>
+                    <th>Text</th>
+                    <th>LikesCount</th>
+                    <th>Date</th>
+                    <th>URL</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <footer>
+            <span class="footer_divs links_block">
+                <a href="https://github.com/bogdanKaftanatiy">
+                    <img src="../img/github.png" alt="link to github" class="links">
+                </a>
+                <a href="https://vk.com/id88531632">
+                    <img src="../img/vk.png" alt="link to vk" class="links">
+                </a>
+                <a href="mailto:bogdankaftanatiy@gmail.com">
+                    <img src="../img/gmail.png" alt="link to gmail" class="links">
+                </a>
+            </span>
+        <span class="footer_divs copyright">© 2016. All Rights Reserved</span>
+        <span class="footer_divs contacts">
+                <h3>Contacts</h3>
+                <div>
+                    <mark>Git:</mark> github.com/bogdanKaftanatiy <br />
+                    <mark>E-mail:</mark> bogdankaftanatiy@gmail.com
+                </div>
+                <div>
+                    <mark>Mob:</mark> +38 (063) 6916592 <br />
+                    <mark>Skype:</mark> Bogdan Kaftanatiy
+                </div>
+            </span>
+    </footer>
 </div>
 <script src="lab2script.js"></script>
 </body>
