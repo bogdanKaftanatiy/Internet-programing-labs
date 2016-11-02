@@ -201,6 +201,8 @@ function formHandler(event) {
             resultArray = searchHash.date(condition.substring(5));
         } else if (condition.indexOf('url:') != -1) {
             resultArray = searchHash.url(condition.substring(4));
+        } else {
+            resultArray = searchHash.text(condition);
         }
 
         if(rightCondition != '') {

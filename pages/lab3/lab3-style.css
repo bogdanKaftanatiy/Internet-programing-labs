@@ -34,84 +34,51 @@ header {
     padding: 30px;
 }
 
-.help {
-    border: 1px solid #ABD9F6;
-    background-color: #DAECFF;
-    color: #1a0f67;
-    border-radius: 5px;
-    width: 100px;
-    text-align: center;
-    padding: 5px;
-    float: right;
-}
-
-.paranga {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(150,150,150, 0.5);
-    z-index: 999;
-}
-
-.helpData {
-    background-color: #EEEEEE;
-    width: 400px;
-    margin: auto;
-    border: 5px solid #4325ff;
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 15%;
-    position: relative;
-}
-
-.closeHelp {
-    width: 20px;
-    padding: 5px;
-    text-align: center;
-    font-weight: bold;
-    border: 2px solid red;
-    border-radius: 100%;
-    background-color: #FF6C6C;
-    position: absolute;
-    top: -15px;
-    right: -15px;
-}
-
-.closedHelp {
-    display: none;
-}
-
 form {
-    text-align: center;
-    padding: 10px 0 30px 0;
-}
-
-form input[type="search"] {
-    width: 500px;
-    height: 35px;
-    font-size: 115%;
-}
-
-form input[type="submit"] {
-    border-radius: 5px;
-    height: 35px;
-    width: 100px;
-}
-
-.resultTable {
+    width: 800px;
     margin: auto;
-    width: 1100px;
+    /*border: 1px solid red;*/
+}
+
+.controlButtonDiv {
+    width: 175px;
+    margin: auto;
+}
+
+.controlButton {
+    display: inline-block;
+    width: 75px;
     text-align: center;
+    border: 2px solid #388AD6;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 4px;
+    font-weight: bold;
+    color: #1A2672;
+    background-color: white;
 }
 
-.resultTable tr:nth-child(2n) {
-    background-color: #DAECFF;
+.controlButton:hover {
+    background-color: #8BDDFF;
 }
 
-.resultTable thead {
-    background-color: #63B5DA;
+.controlButton:active {
+    background-color: #55A7C9;
+}
+
+.disableButton {
+    border-color: #777777;
+    color: #535353;
+}
+
+.disableButton:hover, .disableButton:active {
+    background-color: #D5D5D5;
+}
+
+.finishButton {
+    display: block;
+    width: 100px;
+    margin: auto;
 }
 
 .wrapper {
@@ -121,6 +88,10 @@ form input[type="submit"] {
 
 .content_block {
     padding-bottom: 120px;
+}
+
+.hiddenBlock {
+    display: none;
 }
 
 footer {
@@ -144,7 +115,7 @@ footer {
     margin: 0 10px;
 }
 
-h3 {
+footer h3 {
     margin: 0;
     text-align: center;
 }
@@ -167,4 +138,24 @@ mark {
 
 .copyright {
     padding-top: 25px;
+}
+
+.resultTable {
+    margin: auto;
+    width: 800px;
+    text-align: center;
+}
+
+.resultTable tr:nth-child(2n) {
+    background-color: #DAECFF;
+}
+
+.resultTable thead {
+    background-color: #63B5DA;
+}
+
+.resultLine {
+    width: 800px;
+    margin: auto;
+    padding: 20px 0;
 }

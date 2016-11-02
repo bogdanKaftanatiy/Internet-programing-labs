@@ -3,53 +3,49 @@
 <head>
     <meta charset="utf-8">
     <title>Kaftanatiy IP-42</title>
-    <link rel="stylesheet" href="lab2-style.css">
+    <link rel="stylesheet" href="lab3-style.css">
     <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div class="wrapper">
-    <div class="paranga closedHelp">
-        <div class="helpData">
-            <h3>This is some help data.</h3>
-            You can use &AND& and |OR| operators. <br />
-            For search by id input 'id:'.<br />
-            For search by author input 'author:'.<br />
-            For search by text input 'text:'.<br />
-            For search by likes count input 'like:'.<br />
-            For search by date input 'date:'.<br />
-            For search by url adress input 'url:'.
-            <div class="closeHelp">X</div>
-        </div>
-    </div>
     <header>
         <span class="name">Internet programing labs</span>
         <span class="main_menu"><a href="../../index.html">Lab1</a></span>
-        <span class="main_menu"><a href="./lab2.html">Lab2</a></span>
-        <span class="main_menu"><a href="../lab3/lab3.html">Lab3</a></span>
+        <span class="main_menu"><a href="../lab2/lab2.html">Lab2</a></span>
+        <span class="main_menu"><a href="./lab3.html">Lab3</a></span>
         <span class="main_menu"><a href="#">Lab4</a></span>
     </header>
     <div class="content_block">
-        <div class="help">
-            Help
-        </div>
-        <form name="search_form">
-            <input type="search" name="search" placeholder="Input your request">
-            <input type="submit" value="Search">
-        </form>
 
-        <table class="resultTable" id="displayTable">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Author</th>
-                    <th>Text</th>
-                    <th>LikesCount</th>
-                    <th>Date</th>
-                    <th>URL</th>
-                </tr>
-            </thead>
-        </table>
+        <form name="testForm">
+            <h2>Test for lab3</h2>
+
+            <h3 class="question"></h3>
+
+            <label><input type="radio" name="question" value="qst1"> <span class="firstAnswer"></span></label> <br />
+            <label><input type="radio" name="question" value="qst2"> <span class="secondAnswer"></span></label> <br />
+            <label><input type="radio" name="question" value="qst3"> <span class="thirdAnswer"></span></label> <br />
+            <label><input type="radio" name="question" value="qst4"> <span class="fourthAnswer"></span></label> <br />
+            <div class="controlButtonDiv">
+                <input type="button" value="Previous" class="controlButton disableButton">
+                <input type="button" value="Next" class="controlButton">
+            </div>
+            <input type="button" value="Finish test" class="controlButton finishButton">
+        </form>
+        <div class="resultArea hiddenBlock">
+            <h1 class="resultLine">You get 5 correct answers from 6</h1>
+            <table class="resultTable">
+                <thead>
+                    <tr>
+                        <th>Question number</th>
+                        <th>Your answer</th>
+                        <th>Correct answer</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
     </div>
     <footer>
             <span class="footer_divs links_block">
@@ -77,6 +73,6 @@
             </span>
     </footer>
 </div>
-<script src="lab2script.js"></script>
+<script src="lab3script.js"></script>
 </body>
 </html>
