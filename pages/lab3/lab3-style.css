@@ -144,6 +144,7 @@ mark {
     margin: auto;
     width: 800px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .resultTable tr:nth-child(2n) {
@@ -159,3 +160,36 @@ mark {
     margin: auto;
     padding: 20px 0;
 }
+
+.startTest {
+    padding: 50px;
+}
+
+.startHeader {
+    width: 450px;
+    margin: auto;
+    padding: 30px;
+}
+
+.startButton, .restartButton {
+    display: block;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid #388AD6;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 110%;
+    color: #1A2672;
+    background-color: white;
+}
+
+.startButton:hover, .restartButton:hover {
+    background-color: #8BDDFF;
+}
+
+.startButton:active, .restartButton:active {
+    background-color: #55A7C9;
+}
+

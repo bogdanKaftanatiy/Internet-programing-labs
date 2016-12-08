@@ -20,13 +20,15 @@ var nextButton = document.querySelector(".controlButtonDiv .controlButton:last-c
 nextButton.addEventListener("click", nextButtonLister);
 var finishButton = document.querySelector(".finishButton");
 finishButton.addEventListener("click", finishButtonListener);
+var startButton = document.querySelector(".startButton");
+startButton.addEventListener("click", startButtonListener);
+var restartButton = document.querySelector(".restartButton");
+restartButton.addEventListener("click", restartButtonListener);
 var question = document.querySelector("form .question");
 var answerOne = document.querySelector("form .firstAnswer");
 var answerTwo = document.querySelector("form .secondAnswer");
 var answerThree = document.querySelector("form .thirdAnswer");
 var answerFour = document.querySelector("form .fourthAnswer");
-
-displayQuestionInformation(questionArray[0]);
 
 function nextButtonLister() {
     if(currentQuestion < questionArray.length - 1) {
@@ -106,6 +108,27 @@ function finishButtonListener() {
     resultLine.innerHTML = "You have " + correctAnswersCount + " of " + questionArray.length + " correct answers.";
 
     resultArea.classList.remove("hiddenBlock");
+}
+
+function startButtonListener() {
+    var formTest = document.forms.testForm;
+    formTest.classList.remove("hiddenBlock");
+
+    displayQuestionInformation(questionArray[0]);
+
+    var welcomeBlock = document.querySelector(".startTest");
+    welcomeBlock.classList.add("hiddenBlock");
+}
+
+function restartButtonListener() {
+    currentQuestion = -1;
+    userAnswers = [];
+
+    var welcomeBlock = document.querySelector(".startTest");
+    welcomeBlock.classList.remove("hiddenBlock");
+
+    var resultBlock = document.querySelector(".resultArea");
+    resultBlock.classList.add("hiddenBlock");
 }
 
 function getUserAnswer() {
