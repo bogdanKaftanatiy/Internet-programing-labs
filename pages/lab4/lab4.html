@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Kaftanatiy IP-42</title>
+  <link rel="stylesheet" href="lab4-style.css">
+  <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <header>
+    <span class="name">Internet programing labs</span>
+    <span class="main_menu"><a href="../../index.html">Lab1</a></span>
+    <span class="main_menu"><a href="../lab2/lab2.html">Lab2</a></span>
+    <span class="main_menu"><a href="../lab3/lab3.html">Lab3</a></span>
+    <span class="main_menu"><a href="#">Lab4</a></span>
+  </header>
+    <div class="deck-container">
+
+      <!-- Begin slides. -->
+
+      <section class="slide">
+        <h1>Welcome to my super presentation system!</h1>
+      </section>
+
+      <section class="slide">
+        <h2>How to make a slide</h2>
+        <ol>
+          <li>
+            <h3>Write slides</h3>
+            You can write slide information in index.html file. <br />
+            Slide content is simple HTML code.
+          </li>
+          <li>
+            <h3>Choose Themes</h3>
+            Customizes the colors, typography, and layout of slide content.
+          </li>
+        </ol>
+      </section>
+
+      <section class="slide">
+        <h2>The Markup</h2>
+        <p>Slides are just HTML elements with a class of <code>slide</code>.</p>
+        <div class="codeBlock">
+        <pre><code>&lt;section class=&quot;slide&quot;&gt;
+  &lt;h2&gt;How to make a slide&lt;/h2&gt;
+  &lt;ol&gt;
+    &lt;li&gt;
+      &lt;h3&gt;Write Slides&lt;/h3&gt;
+      &lt;p&gt;You can write slide information in index.html file. Slide content is simple HTML code.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;h3&gt;Choose Themes&lt;/h3&gt;
+      &lt;p&gt;Customizes the colors, typography, and layout of slide content.&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/section&gt;</code></pre>
+        </div>
+      </section>
+
+      <section class="slide">
+        <h2>Nested Slides</h2>
+        <p>That last slide had a few steps.  To create substeps in slides, just nest them:</p>
+        <div class="codeBlock">
+        <pre><code>&lt;section class=&quot;slide&quot;&gt;
+  &lt;h2&gt;Extensions&lt;/h2&gt;
+  &lt;p&gt;Core gives you basic slide functionality...&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li class=&quot;slide&quot;&gt;
+      &lt;h3&gt;deck.goto&lt;/h3&gt;
+      &lt;p&gt;Adds a shortcut key to jump to any slide number...&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;slide&quot;&gt;...&lt;/li&gt;
+    &lt;li class=&quot;slide&quot;&gt;...&lt;/li&gt;
+    &lt;li class=&quot;slide&quot;&gt;...&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/section&gt;</code></pre>
+          </div>
+      </section>
+
+      <section class="slide">
+        <h2>Extensions</h2>
+        <p>Core gives you basic slide functionality with left and right arrow navigation, but you may want more.
+          Here are the ones included in this&nbsp;deck:</p>
+
+        <ul>
+          <li class="slide" id="extensions-menu">
+            <strong>deck.menu</strong>: Adds a menu view, letting you see all slides in a grid. Hit m to toggle
+            to menu view, continue navigating your deck, and hit m to return to normal view. Touch devices
+            can double-tap the deck to switch between&nbsp;views.
+          </li>
+
+          <li class="slide" id="extensions-navigation">
+            <strong>deck.navigation</strong>: Adds clickable left and right buttons for the less keyboard&nbsp;inclined.
+          </li>
+
+          <li class="slide" id="extensions-status">
+            <strong>deck.status</strong>: Adds a page number indicator. (current/total)
+          </li>
+        </ul>
+      </section>
+
+      <section class="slide" id="elements-images">
+        <h2>Other Elements: Images</h2>
+        <img src="http://placekitten.com/600/375" alt="Kitties" width="400px" height="250px">
+        <pre><code>&lt;img src=&quot;http://placekitten.com/600/375&quot; alt=&quot;Kitties&quot;&gt;</code></pre>
+      </section>
+
+      <section class="slide" id="elements-videos">
+        <h2>Other Elements: Video Embeds</h2>
+        <iframe src="https://player.vimeo.com/video/193384851?color=ffffff&title=0&byline=0&portrait=0" width="500" height="280" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <p><a href="https://vimeo.com/193384851">Come Together &ndash; a film directed by Wes Anderson starring Adrien Brody &ndash; H&amp;M</a> from <a href="https://vimeo.com/searchpartymusic">Search Party</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+      </section>
+
+      <!-- End slides. -->
+
+      <!-- Begin extension snippets. Add or remove as needed. -->
+
+      <!-- deck.navigation snippet -->
+      <div aria-role="navigation">
+        <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+        <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+      </div>
+
+      <!-- deck.status snippet -->
+      <p class="deck-status" aria-role="status">
+        <span class="deck-status-current"></span>
+        /
+        <span class="deck-status-total"></span>
+      </p>
+
+      <!-- End extension snippets. -->
+    </div>
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>

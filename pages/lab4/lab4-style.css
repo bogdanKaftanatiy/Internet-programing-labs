@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    font-family: "Oxygen", sans-serif;
+    height:100%;
+}
+
+header {
+    background-color: #388AD6;
+    margin: 0;
+}
+
+.main_menu a,
+.main_menu a:visited {
+    display: inline-block;
+    color: #EEE;
+    text-decoration: none;
+    padding: 29px;
+}
+
+.main_menu a:hover {
+    background-color: #63B5DA;
+    color: white;
+    padding-bottom: 27px;
+    border-bottom: 2px solid white;
+}
+
+.name {
+    padding: 0 50px;
+    color: white;
+    font-family: 'Oleo Script', cursive;
+    font-size: 200%;
+}
+
+.codeBlock {
+    font-size: 50%;
+}
