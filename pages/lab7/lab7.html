@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type='text/javascript' src='jquery.js'></script>
     <meta charset="utf-8">
     <title>Kaftanatiy IP-42</title>
-    <link rel="stylesheet" href="lab3-style.css">
+    <link rel="stylesheet" href="lab7-style.css">
     <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 </head>
@@ -13,47 +14,24 @@
         <span class="name">Internet programing labs</span>
         <span class="main_menu"><a href="../../index.html">Lab1</a></span>
         <span class="main_menu"><a href="../lab2/lab2.html">Lab2</a></span>
-        <span class="main_menu"><a href="./lab3.html">Lab3</a></span>
+        <span class="main_menu"><a href="../lab3/lab3.html">Lab3</a></span>
         <span class="main_menu"><a href="../lab4/lab4.html">Lab4</a></span>
         <span class="main_menu"><a href="../lab5/index.html">Lab5</a></span>
         <span class="main_menu"><a href="../lab6/index.html">Lab6</a></span>
-        <span class="main_menu"><a href="../lab7/lab7.html">Lab7</a></span>
+        <span class="main_menu"><a href="./lab7.html">Lab7</a></span>
     </header>
     <div class="content_block">
-
-        <div class="startTest">
-            <h1 class="startHeader">Welcome to our test system</h1>
-            <input type="button" value="Start test" class="startButton">
+        <div class="wrapper">
+            <hr>
+            <p>После заполнения текстовых полей обновите страницу. Данные, которые вы введете, появятся снова.</p>
+            <input type="text" class="ntSaveForms" value="" placeholder="Имя">
+            <input type="text" class="ntSaveForms" value="" placeholder="Телефон">
+            <input type="text" class="ntSaveForms" value="" placeholder="Электропочта">
+            <textarea class="ntSaveForms" placeholder="Адрес доставки"></textarea>
+            <hr>
+            <p><a href="#" class="ntSaveFormsSubmit">Очистить все данные форм</a>. </p>
         </div>
-        <form name="testForm" class="hiddenBlock">
-            <h2>Test for lab3</h2>
-
-            <h3 class="question"></h3>
-
-            <label><input type="radio" name="question" value="qst1"> <span class="firstAnswer"></span></label> <br />
-            <label><input type="radio" name="question" value="qst2"> <span class="secondAnswer"></span></label> <br />
-            <label><input type="radio" name="question" value="qst3"> <span class="thirdAnswer"></span></label> <br />
-            <label><input type="radio" name="question" value="qst4"> <span class="fourthAnswer"></span></label> <br />
-            <div class="controlButtonDiv">
-                <input type="button" value="Previous" class="controlButton disableButton">
-                <input type="button" value="Next" class="controlButton">
-            </div>
-            <input type="button" value="Finish test" class="controlButton finishButton">
-        </form>
-        <div class="resultArea hiddenBlock">
-            <h1 class="resultLine">You get 5 correct answers from 6</h1>
-            <table class="resultTable">
-                <thead>
-                    <tr>
-                        <th>Question number</th>
-                        <th>Your answer</th>
-                        <th>Correct answer</th>
-                    </tr>
-                </thead>
-            </table>
-
-            <input type="button" value="Restart test" class="restartButton">
-        </div>
+        <script type='text/javascript' src='ntsaveforms.js'></script>
     </div>
     <footer>
             <span class="footer_divs links_block">
@@ -81,6 +59,6 @@
             </span>
     </footer>
 </div>
-<script src="lab3script.js"></script>
+<script src="lab2script.js"></script>
 </body>
 </html>
