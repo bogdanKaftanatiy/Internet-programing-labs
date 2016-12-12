@@ -1,0 +1,106 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Kaftanatiy IP-42</title>
+    <link rel="stylesheet" href="lab5-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="todc/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="todc/css/todc-bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/master.css"/>
+    <script src="./bower_components/jquery/dist/jquery.slim.min.js"></script>
+    <script src="todc/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+    <span class="name">Internet programing labs</span>
+    <span class="main_menu"><a href="../../index.html">Lab1</a></span>
+    <span class="main_menu"><a href="../lab2/lab2.html">Lab2</a></span>
+    <span class="main_menu"><a href="../lab3/lab3.html">Lab3</a></span>
+    <span class="main_menu"><a href="../lab4/lab4.html">Lab4</a></span>
+    <span class="main_menu"><a href="./index.html">Lab5</a></span>
+    <span class="main_menu"><a href="../lab6/index.html">Lab6</a></span>
+</header>
+<div class="content_block">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="search" placeholder="Search">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <button type="button" class="searchButton btn btn-default dropdown-toggle important-inv"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    style="background-color: red;">
+                                Search <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" id="searchGoogle">Google</a></li>
+                                <li><a href="#" id="searchYahoo">Yahoo</a></li>
+                                <li><a href="#" id="searchYandex">Yandex</a></li>
+                                <li><a href="#" id="searchMeta">Meta.ua</a></li>
+                                <li><a href="#" id="searchDuckDuckGo">Duck Duck Go</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    <iframe id="google" target="_top" style="width: 50%; height: 75%; float: left"></iframe>
+    <iframe id="frame-content" style="width: 50%; height:75%; float: left; overflow-y: hidden"></iframe>
+
+    <div class="center-block">
+        <h3 style="text-align: center" id="caption"> </h3>
+        <div>
+            <form class="form-inline">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="a" placeholder="Видані релевантні">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="b" placeholder="Видані нерелевантні">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="c" placeholder="Релевантні невидані">
+                </div>
+            </form>
+            <div>Recall <span class="badge" id="recall"></span></div>
+            <div>Precision <span class="badge" id="precision"></span></div>
+            <div>Accuracy <span class="badge" id="accuracy"></span></div>
+            <div>Errors<span class="badge" id="error"></span></div>
+            <div>F-measure <span class="badge" id="f-measure"></span></div>
+            <div>Avarage precision <span class="badge" id="avg-precision"></span></div>
+        </div>
+    </div>
+    <script src="js/master.js"></script>
+</div>
+<footer>
+            <span class="footer_divs links_block">
+                <a href="https://github.com/bogdanKaftanatiy">
+                    <img src="../img/github.png" alt="link to github" class="links">
+                </a>
+                <a href="https://vk.com/id88531632">
+                    <img src="../img/vk.png" alt="link to vk" class="links">
+                </a>
+                <a href="mailto:bogdankaftanatiy@gmail.com">
+                    <img src="../img/gmail.png" alt="link to gmail" class="links">
+                </a>
+            </span>
+    <span class="footer_divs copyright">© 2016. All Rights Reserved</span>
+    <span class="footer_divs contacts">
+                <h3>Contacts</h3>
+                <div>
+                    <mark>Git:</mark> github.com/bogdanKaftanatiy <br />
+                    <mark>E-mail:</mark> bogdankaftanatiy@gmail.com
+                </div>
+                <div>
+                    <mark>Mob:</mark> +38 (063) 6916592 <br />
+                    <mark>Skype:</mark> Bogdan Kaftanatiy
+                </div>
+            </span>
+</footer>
+    
+</body>
+</html>

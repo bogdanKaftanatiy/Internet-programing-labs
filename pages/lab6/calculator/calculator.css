@@ -5,13 +5,6 @@
     box-sizing: border-box;
 }
 
-/* A nice BG gradient */
-html {
-    background: white;
-    background: radial-gradient(circle, #fff 20%, #ccc);
-    background-size: cover;
-}
-
 /* Using box shadows to create 3D effects */
 #calculator {
     /* Better text styling */

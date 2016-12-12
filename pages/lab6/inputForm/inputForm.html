@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Kaftanatiy IP-42</title>
+    <link rel="stylesheet" href="../lab6-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.css'/>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <span class="name">Internet programing labs</span>
+        <span class="main_menu"><a href="../../../index.html">Lab1</a></span>
+        <span class="main_menu"><a href="../../lab2/lab2.html">Lab2</a></span>
+        <span class="main_menu"><a href="../../lab3/lab3.html">Lab3</a></span>
+        <span class="main_menu"><a href="../../lab4/lab4.html">Lab4</a></span>
+        <span class="main_menu"><a href="../../lab5/index.html">Lab5</a></span>
+        <span class="main_menu"><a href="../index.html">Lab6</a></span>
+    </header>
+
+    <div class="content_block">
+        <form class="form-horizontal" data-toggle="validator">
+            <!--<fieldset>-->
+
+            <!-- Form Name -->
+            <legend align = 'center'>Форма</legend>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="textinput">ПІП</label>
+                <div class="col-md-4">
+                    <input id="textinput" name="textinput" placeholder="Прізвище Ім'я По-батькові" class="form-control input-md" required="" type="text" data-minlength="4">
+                </div>
+            </div>
+
+            <!-- Search input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="searchinput">Електронна пошта</label>
+                <div class="col-md-4">
+                    <input id="email-inupt" name="searchinput" placeholder="e-mail" class="form-control input-md" type="email">
+                </div>
+            </div>
+
+            <!-- Search input-->
+            <div class="form-group" >
+                <label class="col-md-4 control-label" for="tel">Номер телефону</label>
+                <div class="col-md-4">
+                    <input id="tel" name="searchinput" placeholder="+380 XX YYY ZZZZ" class="form-control input-md" type="search"
+                           pattern="\+380 *[1-9]{2} *[1-9]{3} *[1-9]{4}">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+
+            <div class=form-group>
+                <div class="col-md-4 control-label" for="searchinput"></div>
+                <div class="col-md-4">
+                    <button id="send" name="send" class="btn btn-success pull-right">Відправити</button>
+                </div>
+            </div>
+
+            <!-- Button (Double) -->
+
+            <!--</fieldset>-->
+        </form>
+    </div>
+
+    <footer>
+            <span class="footer_divs links_block">
+                <a href="https://github.com/bogdanKaftanatiy">
+                    <img src="../../img/github.png" alt="link to github" class="links">
+                </a>
+                <a href="https://vk.com/id88531632">
+                    <img src="../../img/vk.png" alt="link to vk" class="links">
+                </a>
+                <a href="mailto:bogdankaftanatiy@gmail.com">
+                    <img src="../../img/gmail.png" alt="link to gmail" class="links">
+                </a>
+            </span>
+        <span class="footer_divs copyright">© 2016. All Rights Reserved</span>
+        <span class="footer_divs contacts">
+                <h3>Contacts</h3>
+                <div>
+                    <mark>Git:</mark> github.com/bogdanKaftanatiy <br />
+                    <mark>E-mail:</mark> bogdankaftanatiy@gmail.com
+                </div>
+                <div>
+                    <mark>Mob:</mark> +38 (063) 6916592 <br />
+                    <mark>Skype:</mark> Bogdan Kaftanatiy
+                </div>
+            </span>
+    </footer>
+</div>
+<script src="lab3script.js"></script>
+</body>
+</html>
