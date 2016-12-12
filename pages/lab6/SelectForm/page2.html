@@ -7,6 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.css'/>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -21,49 +22,13 @@
     </header>
 
     <div class="content_block">
-        <form class="form-horizontal" data-toggle="validator">
-            <!--<fieldset>-->
+        <div class="container">
+            <div class="col-md-4 col-md-offset-4">
+                <h1> Page 2 </h1>
+                <a href="selectForm.html" class="btn btn-default">Назад</a>
 
-            <!-- Form Name -->
-            <legend align = 'center'>Форма</legend>
-
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="textinput">ПІП</label>
-                <div class="col-md-4">
-                    <input id="textinput" name="textinput" placeholder="Прізвище Ім'я По-батькові" class="form-control input-md" required="" type="text" data-minlength="4">
-                </div>
             </div>
-
-            <!-- Search input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="searchinput">Електронна пошта</label>
-                <div class="col-md-4">
-                    <input id="email-inupt" name="searchinput" placeholder="e-mail" class="form-control input-md" type="email">
-                </div>
-            </div>
-
-            <!-- Search input-->
-            <div class="form-group" >
-                <label class="col-md-4 control-label" for="tel">Номер телефону</label>
-                <div class="col-md-4">
-                    <input id="tel" name="searchinput" placeholder="+380 XX YYY ZZZZ" class="form-control input-md" type="search"
-                           pattern="\+380 *[1-9]{2} *[1-9]{3} *[1-9]{4}">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-
-            <div class=form-group>
-                <div class="col-md-4 control-label" for="searchinput"></div>
-                <div class="col-md-4">
-                    <button id="send" name="send" class="btn btn-success pull-right">Відправити</button>
-                </div>
-            </div>
-
-            <!-- Button (Double) -->
-
-            <!--</fieldset>-->
-        </form>
+        </div>
     </div>
 
     <footer>

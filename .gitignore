@@ -1,1 +1,5 @@
 .idea/
+bootstrap/
+bootstrap-validator/
+jquery/
+validator.js/
